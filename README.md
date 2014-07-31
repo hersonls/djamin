@@ -20,3 +20,11 @@ Quick start
 
 2. Start the development server and visit http://127.0.0.1:8000/admin/ and 
    anjoy.
+
+
+Screenshots
+-----------
+
+![alt tag](https://raw.githubusercontent.com/hersonls/djamin/master/screenshots/dashboard.png)
+
+![alt tag](https://raw.githubusercontent.com/hersonls/djamin/master/screenshots/forms.png)
