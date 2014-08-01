@@ -15,7 +15,9 @@
 .change-list .hiddenfields { display:none; }
 
 .change-list .filtered table {
-    border-right: 1px solid #ddd;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .change-list .filtered {
@@ -23,16 +25,25 @@
 }
 
 .change-list .filtered {
-    background: white url(../img/changelist-bg.gif) top right repeat-y !important;
+    background: transparent;
 }
 
 .change-list .filtered .results, .change-list .filtered .paginator, .filtered #toolbar, .filtered div.xfull {
-    margin-right: 160px !important;
-    width: auto !important;
+    /*margin-right: 160px !important;*/
+    /*width: auto !important;*/
 }
 
 .change-list .filtered table tbody th {
     padding-right: 1em;
+}
+
+.change-list .filtered #toolbar {
+    float: left;
+    width: 80%;
+}
+
+.change-list .filtered #changelist-form {
+    width: 80%;
 }
 
 #changelist-form .results {
@@ -49,10 +60,6 @@
     /*border-bottom: 1px solid #e5e5e5;*/
     /*background: white url(../img/nav-bg.gif) 0 180% repeat-x;*/
     overflow: hidden;
-}
-
-.change-list .filtered .paginator {
-    border-right: 1px solid #ddd;
 }
 
 /* CHANGELIST TABLES */
@@ -92,42 +99,90 @@
 /* TOOLBAR */
 
 #changelist #toolbar {
-    padding: 3px;
-    border-bottom: 1px solid #ddd;
-    background: #e1e1e1 url(../img/nav-bg.gif) top left repeat-x;
-    color: #999;
-}
-
-#changelist #toolbar form input {
-    font-size: 11px;
-    padding: 1px 2px;
-}
-
-#changelist #toolbar form #searchbar {
-    padding: 2px;
+    background: #4285f4;
+    color: #fff;
 }
 
 #changelist #changelist-search img {
-    vertical-align: middle;
+    display: none;
+}
+
+#changelist #changelist-search {
+    padding: 5px;
+}
+
+#changelist-search input[type=text]{
+    width: 90%;
+    height: 36px;
+    padding: 0 18px 0 60px;
+    background: #5e97f6;
+    color: #fff;
+    font-size: 14px;
+    border: 0;
+    border-radius: 2px;
+}
+
+#changelist-search input[type=text]:focus {
+    background: #5f99fe;
+    outline: -webkit-focus-ring-color auto 0px;
+
+}
+
+#changelist-search:before {
+    position: absolute;
+    top: 14px;
+    left: 20px;
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e624";
+    font-size: 22px;
+}
+
+#changelist-search input[type=submit] {
+    display: none;
+}
+
+#changelist-search .quiet {
+    clear: both;
+    display: block;
+    text-align: right;
+    padding: 4px 0 0;
+}
+
+#changelist-search .quiet {
+    color: #fff !important;
+    font-weight: normal !important;
+}
+
+#changelist-search .quiet a {
+    color: #3c64a6;
 }
 
 /* FILTER COLUMN */
 
 #changelist-filter {
-    position: absolute;
-    top: 0;
-    right: 0;
+    float: right;
     z-index: 1000;
-    width: 160px;
-    border-left: 1px solid #ddd;
-    background: #efefef;
-    margin: 0;
+    width: 18%;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    background: #fff;
 }
 
 #changelist-filter h2 {
-    font-size: 11px;
-    padding: 2px 5px;
-    border-bottom: 1px solid #ddd;
+    position: absolute;
+    top: -20px;
+    padding: 0;
+    font-size: 12px;
 }
 
 #changelist-filter h3 {
@@ -240,8 +295,8 @@
 /* ACTIONS */
 
 .filtered .actions {
-    margin-right: 160px !important;
-    border-right: 1px solid #ddd;
+    /*margin-right: 160px !important;*/
+    border: 1px solid #e5e5e5;
 }
 
 #changelist table input {
@@ -255,8 +310,6 @@
 #changelist .actions {
     color: #999;
     padding: 3px;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #ddd;
     background: #fff;
 }
 

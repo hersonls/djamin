@@ -721,7 +721,7 @@ a.deletelink:hover {
     display: block;
     float: left;
     color: #707070;
-    padding: .1em 14px .1em 8px;
+    padding: .1em 0 .1em 8px;
     height: 14px;
 }
 
@@ -730,14 +730,14 @@ a.deletelink:hover {
 }
 
 .object-tools a.viewsitelink, .object-tools a.golink {
-    padding-right: 28px;
+    padding-left: 10px;
 }
 
 .object-tools a.viewsitelink:hover, .object-tools a.golink:hover {
 }
 
 .object-tools a.addlink {
-    padding-right: 28px;
+    padding-left: 10px;
 }
 
 .object-tools a.addlink:hover {
