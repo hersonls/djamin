@@ -27,4 +27,8 @@ Screenshots
 
 ![alt tag](https://raw.githubusercontent.com/hersonls/djamin/master/screenshots/dashboard.png)
 
-![alt tag](https://raw.githubusercontent.com/hersonls/djamin/master/screenshots/forms.png)
+![alt tag](https://raw.githubusercontent.com/hersonls/djamin/master/screenshots/changelist.png)
+
+![alt tag](https://raw.githubusercontent.com/hersonls/djamin/master/screenshots/changelist_with_inline.png)
+
+![alt tag](https://raw.githubusercontent.com/hersonls/djamin/master/screenshots/changeform.png)
