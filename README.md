@@ -34,8 +34,8 @@ Djamin a new and clean styles for Django admin based in Google projects styles.
 
 ## Contributing
 
-Please, install and use Djamin. When you find a bug in the interface with the 
-bug fix, and make a pull request or open a new issue with screenshot of the 
+Please, install and use Djamin. When you find a bug in the interface, and make 
+a pull request with the bug fix or open a new issue with screenshot of the 
 problem. All helps are welcome.
 
 ## Creator
