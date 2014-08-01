@@ -2,7 +2,7 @@
     DJANGO Admin styles
 */
 
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500italic,500,700,700italic,900italic,900);
+/*@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500italic,500,700,700italic,900italic,900);*/
 @import url(../fonts/icomoon/style.css);
 
 body {
@@ -439,16 +439,18 @@ form .module {
 /* FORM BUTTONS */
 
 .button, input[type=submit], input[type=button], .submit-row input {
-    background: white url(../img/nav-bg.gif) bottom repeat-x;
-    padding: 3px 5px;
-    color: black;
-    border: 1px solid #bbb;
-    border-color: #ddd #aaa #aaa #ddd;
+    background: #fff;
+    padding: 8px 10px;
+    color: #999;
+    border: none;
+    font-size: 12px;
+    border-radius: 4px; 
+    cursor: pointer;
 }
 
+.button:hover, input[type=submit]:hover, input[type=button]:hover,
 .button:active, input[type=submit]:active, input[type=button]:active {
-    background-image: url(../img/nav-bg-reverse.gif);
-    background-position: top;
+    background: #f8f8f8;
 }
 
 .button[disabled], input[type=submit][disabled], input[type=button][disabled] {
@@ -458,22 +460,18 @@ form .module {
 }
 
 .button.default, input[type=submit].default, .submit-row input.default {
-    border: 2px solid #5b80b2;
-    background: #7CA0C7 url(../img/default-bg.gif) bottom repeat-x;
-    font-weight: bold;
+    background: #4285f4;
     color: white;
     float: right;
 }
 
+.button.default:hover, input[type=submit].default:hover,
 .button.default:active, input[type=submit].default:active {
-    background-image: url(../img/default-bg-reverse.gif);
-    background-position: top;
+    background: #4189ff;
 }
 
 .button[disabled].default, input[type=submit][disabled].default, input[type=button][disabled].default {
-	background-image: url(../img/default-bg.gif);
-	background-position: bottom;
-	opacity: 0.4;
+	opacity: 0.3;
 }
 
 
@@ -638,7 +636,11 @@ div.breadcrumbs {
 
 /* ACTION ICONS */
 .addlink:before,
-.changelink:before  {
+.changelink:before,
+.inline-group ul.tools a.add:before,
+.inline-group div.add-row a:before,
+.inline-group .tabular tr.add-row td a:before,
+.submit-row .deletelink:before {
     font-family: 'icomoon';
     speak: none;
     font-style: normal;
@@ -658,6 +660,11 @@ div.breadcrumbs {
     /*background: url(../img/icon_addlink.gif) 0 .2em no-repeat;*/
 }
 
+.addlink:before,
+.changelink:before,
+.inline-group ul.tools a.add:before,
+.inline-group div.add-row a:before,
+.inline-group .tabular tr.add-row td a:before,
 .addlink:before {
     content: "\e680";
 }
@@ -672,8 +679,10 @@ div.breadcrumbs {
 }
 
 .deletelink {
-    padding-left: 12px;
     /*background: url(../img/icon_deletelink.gif) 0 .25em no-repeat;*/
+}
+.deletelink:before {
+    content: "\e678";
 }
 
 a.deletelink:link, a.deletelink:visited {
