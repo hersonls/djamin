@@ -12,6 +12,12 @@ body.login {
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
+
+    border-radius: 4px;
+
+    -webkit-box-shadow: 0 2px 2px -2px rgba(50, 50, 50, 0.50);
+    -moz-box-shadow: 0 2px 2px -2px rgba(50, 50, 50, 0.50);
+    box-shadow: 0 2px 2px -2px rgba(50, 50, 50, 0.50);
 }
 
 .login #content-main {
@@ -52,9 +58,44 @@ body.login {
 
 .login .submit-row {
     clear: both;
-    padding: 1em 0 0 9.4em;
+    text-align: center;
+}
+
+.login .submit-row label {
+    display: none;
+}
+
+.login .submit-row input {
+    display: inline-block;
 }
 
 .login .password-reset-link {
     text-align: center;
+}
+
+/**
+ * Header
+ */
+.login #header {
+    border-radius: 2px 2px 0 0;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.login #branding {
+    text-align: center;
+}
+
+.login #content {
+    margin: 0 auto 10px;
+}
+
+.login .errornote {
+    margin-top: 20px;
+}
+
+.login #footer {
+    padding: 0;
 }
