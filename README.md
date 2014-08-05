@@ -18,8 +18,8 @@ Djamin a new and clean styles for Django admin based in Google projects styles.
        )
     ```
 
-3. Start the development server and visit http://127.0.0.1:8000/admin/ and 
-   anjoy.
+3. Start the development server and visit the http://127.0.0.1:8000/admin/ and enjoy it. 
+
 
 
 ## Screenshots
@@ -34,9 +34,8 @@ Djamin a new and clean styles for Django admin based in Google projects styles.
 
 ## Contributing
 
-Please, install and use Djamin. When you find a bug in the interface, and make 
-a pull request with the bug fix or open a new issue with screenshot of the 
-problem. All helps are welcome.
+Please, install and give a try to Djamin. Make a pull request with the bugfix or open a new issue with the screenshot's problem.
+Any kind of help are welcome!
 
 ## Creator
 
