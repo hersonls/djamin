@@ -429,7 +429,7 @@ textarea {
 
 input[type=text], input[type=password], input[type=email], input[type=url], input[type=number],
 textarea, select, .vTextField {
-    border: 1px solid #ccc;
+    border: 1px solid #e5e5e5;
 }
 
 form .module {
@@ -640,7 +640,9 @@ div.breadcrumbs {
 .inline-group ul.tools a.add:before,
 .inline-group div.add-row a:before,
 .inline-group .tabular tr.add-row td a:before,
-.submit-row .deletelink:before {
+.submit-row .deletelink:before,
+a.selector-clearall:before,
+a.selector-chooseall:after {
     font-family: 'icomoon';
     speak: none;
     font-style: normal;
@@ -653,6 +655,10 @@ div.breadcrumbs {
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+a.selector-chooseall:after {
+    padding: 0 0 0 3px;
 }
 
 .addlink {

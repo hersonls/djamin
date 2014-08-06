@@ -22,17 +22,20 @@
 }
 
 .selector-available h2, .selector-chosen h2 {
-    border: 1px solid #ccc;
+    border: 1px solid #e5e5e5;
 }
 
 .selector .selector-available h2 {
-    background: white url(../img/nav-bg.gif) bottom left repeat-x;
-    color: #666;
+    background: #4285f4;
+    color: #FFF;
+    border: none;
+    font-weight: 400;
+    text-transform: 
 }
 
 .selector .selector-filter {
     background: white;
-    border: 1px solid #ccc;
+    border: 1px solid #e5e5e5;
     border-width: 0 1px;
     padding: 3px;
     color: #999;
@@ -122,22 +125,26 @@ a.active.selector-chooseall:hover, a.active.selector-clearall:hover {
 }
 
 a.selector-chooseall {
-    background: url(../img/selector-icons.gif) right -263px no-repeat;
     cursor: default;
 }
 
+a.selector-chooseall:after {
+    content: "\e67d";
+}
+
 a.active.selector-chooseall {
-    background: url(../img/selector-icons.gif) right -289px no-repeat;
     cursor: pointer;
 }
 
 a.selector-clearall {
-    background: url(../img/selector-icons.gif) left -211px no-repeat;
     cursor: default;
 }
 
+a.selector-clearall:before {
+    content: "\e67c";
+}
+
 a.active.selector-clearall {
-    background: url(../img/selector-icons.gif) left -237px no-repeat;
     cursor: pointer;
 }
 
@@ -169,7 +176,6 @@ a.active.selector-clearall {
     height: 22px;
     width: 50px;
     margin: 0 0 3px 40%;
-    background: url(../img/chooser_stacked-bg.gif) top center no-repeat;
 }
 
 .stacked .selector-chooser li {
