@@ -898,3 +898,14 @@ table#change-history tbody th {
     color: #999;
 }
 
+/**
+ * Content styles
+ */
+#content > ul {
+    background: #fff;
+    padding: 20px 20px 20px 40px;
+    border-radius: 5px;
+}
+#content > ul li {
+    font-size: 12px;
+}
