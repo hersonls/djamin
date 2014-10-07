@@ -261,10 +261,9 @@
 }
 
 .paginator a:link, .paginator a:visited {
-    padding: 2px 6px;
-    border: solid 1px #ccc;
-    background: white;
+    padding: 0 6px;
     text-decoration: none;
+    font-weight: 700;
 }
 
 .paginator a.showall {
@@ -273,7 +272,7 @@
 }
 
 .paginator a.showall:hover {
-    color: #036 !important;
+    color: #088af7 !important;
     background: transparent !important;
 }
 
@@ -283,16 +282,11 @@
 }
 
 .paginator .this-page {
-    padding: 2px 6px;
-    font-weight: bold;
-    font-size: 13px;
-    vertical-align: top;
+    padding: 0 6px;
 }
 
 .paginator a:hover {
-    color: white;
-    background: #5b80b2;
-    border-color: #036;
+    color: #088af7;
 }
 
 /* ACTIONS */
