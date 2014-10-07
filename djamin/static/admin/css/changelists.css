@@ -55,11 +55,13 @@
 }
 
 #changelist .paginator {
-    color: #999;
-    /*border-top: 1px solid #e5e5e5;*/
-    /*border-bottom: 1px solid #e5e5e5;*/
-    /*background: white url(../img/nav-bg.gif) 0 180% repeat-x;*/
+    display: inline-block;
+    background: #fff;
+    padding: 4px 10px 5px;
+    border-radius: 5px;
+    line-height: 1;
     overflow: hidden;
+    color: #999;
 }
 
 /* CHANGELIST TABLES */
