@@ -571,11 +571,22 @@ ul.errorlist {
 .errorlist li {
     font-size: 12px !important;
     display: block;
-    padding: 4px 5px 4px 25px;
+    padding: 4px 0;
+    line-height: 1.4;
     margin: 0 0 3px 0;
-    border: 1px solid red;
-    color: white;
-    background: red url(../img/icon_alert.gif) 5px .3em no-repeat;
+    color: #999;
+    color: #a94442;
+    border-radius: 5px;
+}
+
+.errorlist li:before { 
+    display: block;
+    float: left;
+    margin-right: 2px;
+    font-family: 'icomoon';
+    content: "\e67e";
+    font-size: 14px;
+    color: #a94442;
 }
 
 .errorlist li a {
@@ -593,7 +604,8 @@ td ul.errorlist li {
 }
 
 .errors {
-    background: #ffc;
+    background-color: #f2dede;
+    border-top: 1px solid #ebccd1 !important;
 }
 
 .errors input, .errors select, .errors textarea {
@@ -642,7 +654,8 @@ div.breadcrumbs {
 .inline-group .tabular tr.add-row td a:before,
 .submit-row .deletelink:before,
 a.selector-clearall:before,
-a.selector-chooseall:after {
+a.selector-chooseall:after,
+.errorlist li:before {
     font-family: 'icomoon';
     speak: none;
     font-style: normal;
