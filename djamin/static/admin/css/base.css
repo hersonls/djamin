@@ -326,7 +326,7 @@ thead th.sorted {
 }
 
 thead th.sorted .text {
-	padding-right: 42px;
+    padding-right: 42px;
 }
 
 table thead th .text span {
@@ -454,9 +454,9 @@ form .module {
 }
 
 .button[disabled], input[type=submit][disabled], input[type=button][disabled] {
-	background-image: url(../img/nav-bg.gif);
-	background-position: bottom;
-	opacity: 0.4;
+    background-image: url(../img/nav-bg.gif);
+    background-position: bottom;
+    opacity: 0.4;
 }
 
 .button.default, input[type=submit].default, .submit-row input.default {
@@ -471,7 +471,7 @@ form .module {
 }
 
 .button[disabled].default, input[type=submit][disabled].default, input[type=button][disabled].default {
-	opacity: 0.3;
+    opacity: 0.3;
 }
 
 
@@ -556,11 +556,11 @@ ul.messagelist li.error{
 .errornote {
     font-size: 12px !important;
     display: block;
-    padding: 4px 5px 4px 25px;
+    padding: 4px 5px 4px 5px;
     margin: 0 0 3px 0;
-    border: 1px solid red;
-    color: red;
-    background: #ffc url(../img/icon_error.gif) 5px .3em no-repeat;
+    border: 1px solid #ebccd1;
+    color: #a94442;
+    background-color: #f2dede;
 }
 
 ul.errorlist {
@@ -579,7 +579,7 @@ ul.errorlist {
     border-radius: 5px;
 }
 
-.errorlist li:before { 
+.errorlist li:before, .errornote:before { 
     display: block;
     float: left;
     margin-right: 2px;
@@ -590,7 +590,7 @@ ul.errorlist {
 }
 
 .errorlist li a {
- 	color: white;
+    color: white;
     text-decoration: underline;
 }
 
